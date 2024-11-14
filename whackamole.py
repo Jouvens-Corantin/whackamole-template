@@ -28,7 +28,6 @@ def main():
                     if mole_position_y <= event.pos[1] <= mole_position_y + 32:
                         mole_position_x = random.randrange(0, 609, 32)
                         mole_position_y = random.randrange(0, 482, 32)
-                        screen.blit(mole_image, mole_image.get_rect(topleft=(mole_position_x, mole_position_y)))
             screen.blit(mole_image, mole_image.get_rect(topleft=(mole_position_x, mole_position_y)))
             pygame.display.flip()
             clock.tick(60)
